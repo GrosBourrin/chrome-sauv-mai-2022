@@ -1,0 +1,58 @@
+/*When hovering the mouse pointer over the item, instead of the normal message we display a more detailed one. For blocked downloads the entire area shows the hover message, for other downloads only the main area does.*/
+.downloadMainArea {
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+	border-radius: 6px !important;
+}
+
+.downloadMainArea:hover {
+	border: none !important;
+	outline: none !important;
+	box-shadow: none !important;
+	background-color: #1e90ff80 !important;
+	border: 1px solid #1e90ff80 !important;
+	border-radius: 6px !important;
+}
+
+#downloadsRichListBox>richlistitem {
+	/*background-color: #161a27 !important;*/
+	background-image: none !important;
+	background-clip: none !important;
+	border-radius: 6px !important;
+	outline: none !important;
+}
+
+#downloadsRichListBox>richlistitem[selected] {
+	background-color: #1e90ff !important;
+	/*background-image: none !important;*/
+	background-clip: none !important;
+	border-radius: 0px !important;
+	outline: none !important;
+	/*border: 1px solid #1e90ff !important;*/
+
+}
+
+:root {
+	--downloads-item-height: 45px !important;
+}
+
+#places #downloadsRichListBox {
+	/*appearance: none !important;*/
+	color: #ffffff !important;
+	background-color: #161a27 !important;
+}
+.downloadTypeIcon image {
+	display: -moz-box !important;
+	color: #ffffff !important;
+	filter: opacity(1) !important;
+	filter: brightness(100%) !important;
+	background-size: cover !important;
+
+}
+
+.downloadTypeIcon {
+	display: -moz-box !important;
+	opacity: 1 !important;
+
+}

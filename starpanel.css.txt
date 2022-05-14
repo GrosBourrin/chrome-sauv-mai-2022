@@ -1,0 +1,84 @@
+/*== image Panel Star ==*/
+/* for dark theme coloe #1f1f1f    */
+/* change colors by what you want */
+
+editBookmarkPanelStarIcon {
+	background-image: none !important;
+	background-color: transparent !important;
+	list-style-image: url("star.png") !important;
+	/* star icon file in chrome folder */
+}
+
+/==image URL Star==/ star-button {
+	list-style-image: url("star.png") !important;
+	/* star icon file in chrome folder */
+}
+
+/* white text in star menu and dark background*/
+editBMPanel_folderMenuList {
+	-moz-appearance: none !important;
+	background: #1f1f1f !important;
+	color: white !important;
+}
+
+panel #editBookmarkPanel,
+.panel-arrow,
+.panel-arrowcontent {
+	opacity: 1 !important;
+	font-family: Fira Sans !important;
+	background-color: #2f2f2f !important;
+	fill: #1f1f1f !important;
+}
+
+/*------------------------------------------------------------------------------*/
+/*#editBookmarkPanel button,*/
+editBookmarkPanel textbox,
+editBookmarkPanel menulist,
+editBookmarkPanel richlistbox,
+editBookmarkPanel tree {
+	-moz-appearance: none !important;
+	background-color: #1f1f1f !important;
+	color: #ffffff !important;
+	fill: white !important;
+}
+
+editBookmarkPanel button:hover {
+	filter: brightness(70%) !important;
+	border: none !important;
+}
+
+editBookmarkPanel menulist {
+	padding: 4px !important;
+}
+
+editBookmarkPanel button {
+	padding: 14px !important;
+	font-size: 12px !important;
+}
+
+editBMPanel_folderTree treechildren::-moz-tree-cell(selected) {
+	background-color: dodgerblue !important;
+}
+
+editBMPanel_folderTree treechildren::-moz-tree-cell(hover) {
+	background-color: rgba(30, 143, 255, 0.5) !important;
+}
+
+PlacesToolbarItems>.bookmark-item:not([container])>.toolbarbutton-icon[label]:not([label=""]) {
+	fill: dodgerblue !important;
+}
+
+/*-------------------------*/
+/* remove background color */
+/*-------------------------*/
+#urlbar #star-button-animatable-box,
+#urlbar #pageAction-panel-bookmark,
+#urlbar #star-button,
+#urlbar #star-button-animatable-box,
+	{
+	fill-opacity: 1 !important;
+	/*  or...  */
+	opacity: 1 !important;
+	background: unset !important;
+	box-shadow: unset !important;
+}

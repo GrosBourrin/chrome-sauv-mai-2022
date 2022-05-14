@@ -1,0 +1,50 @@
+/* nav bar is semi opaque when unhovered */
+#nav-bar>* {
+	opacity: 0.0;
+	transition: opacity 0.3s;
+}
+
+#nav-bar:hover>* {
+	opacity: 1 !important;
+}
+
+#urlbar {
+	opacity: 1 !important;
+}
+
+#urlbar .urlbar-input-box {
+	opacity: 1 !important;
+}
+
+/*
+#urlbar,
+.searchbar-textbox {
+	border: 0px !important;
+	height: 20px !important;
+}
+
+#urlbar {
+	margin-left: 1px !important;
+	margin-right: 1px !important;
+}
+
+.tab-background {
+	border-top: none !important;
+}
+
+.tabs-newtab-button,
+#new-tab-button,
+#alltabs-button {
+	color: rgba(240, 240, 240, 1);
+	border-top: 0px !important;
+	margin-bottom: 0px !important;
+}
+
+
+window:not([chromehidden~="toolbar"]) #urlbar-container>.toolbarbutton-1:-moz-any([disabled], :not([open]):not([disabled]):not(:active))>.toolbarbutton-icon[class],
+#main-window:not([customizing]) #back-button[disabled]>.toolbarbutton-icon[class] {
+
+	box-shadow: none !important;
+	border: 0px !important;
+}
+*/

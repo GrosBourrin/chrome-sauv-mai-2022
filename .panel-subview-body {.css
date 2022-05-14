@@ -1,0 +1,74 @@
+.panel-subview-body {
+	color: #ffffff !important;
+	background: #1c232e !important;
+	/*border-color: #ffffff !important;*/
+}
+
+.subviewbutton.panel-subview-footer {
+	background-color: #1c232e !important;
+	border-top: 0px solid !important;
+}
+
+.panel-header {
+	border-bottom: 1px solid #1c232e !important;
+	background: #1c232e !important;
+}
+
+.panel-subview-footer,
+[class^="PanelUI-"] {
+	color: #ffffff !important;
+	background: #1c232e !important;
+}
+
+.subviewbutton.panel-subview-footer {
+	background-color: #1c232e !important;
+	border-top: 1px solid !important;
+}
+
+.PanelUI-subView toolbarseparator {
+	display: visible !important;
+	margin: 4px 8px 4px 8px !important;
+	border-color: #555555 !important;
+}
+
+#appMenu-zoom-controls+toolbarseparator {
+	display: visible !important;
+	border-color: #555555 !important;
+}
+
+#appMenu-tp-separator {
+	display: visible !important;
+	margin: 4px 8px 4px 8px !important;
+	border-color: #555555 !important;
+}
+
+.subviewbutton[shortcut]::after {
+	font-family: Fira Sans !important;
+	font-size: 14px !important;
+	color: #1e90ff !important;
+}
+
+.subviewbutton-nav::after {
+	fill: #ffffff !important;
+}
+
+#appMenu-popup .subviewbutton .toolbarbutton-text,
+#appMenu-popup .panel-arrowcontent {
+	font-family: Fira Sans !important;
+	font-size: 14px !important;
+	margin-left: 4px !important;
+}
+
+panelmultiview .toolbaritem-combined-buttons>label {
+	font-family: Fira Sans !important;
+	font-size: 14px !important;
+	margin-left: 0px !important;
+}
+
+.PanelUI-subView .toolbaritem-combined-buttons>.subviewbutton-iconic>.toolbarbutton-text {
+	display: none !important;
+}
+
+#appMenu-whatsnew-button {
+	display: none !important;
+}

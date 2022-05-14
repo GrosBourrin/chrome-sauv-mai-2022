@@ -1,0 +1,129 @@
+
+@-moz-document url-prefix("about:downloads") {
+	:root {
+		--downloads-item-height: 50px !important;
+	}
+
+	.downloadTypeIcon {
+		margin-block: 2px !important;
+	}
+
+	.downloadMainArea {
+		border: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+		border-radius: 4px !important;
+	}
+
+	.downloadMainArea:hover {
+		border: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+		background-color: #1e90ff80 !important;
+		border-radius: 4px !important;
+	}
+
+
+	#downloadsRichListBox>richlistitem {
+		background-image: none !important;
+		/*background: padding-box !important;*/
+		border-radius: 4px !important;
+		outline: none !important;
+	}
+
+	#downloadsRichListBox>richlistitem:hover {
+		background-color: #1e90ff80 !important;
+		background-image: none !important;
+		background-clip: padding-box !important;
+		border-radius: 4px !important;
+		outline: none !important;
+	}
+
+	#downloadsRichListBox>richlistitem[selected] {
+		background-color: #1e90ff80 !important;
+		background-image: none !important;
+		background-clip: padding-box !important;
+		border-radius: 4px !important;
+		outline: none !important;
+
+
+	}
+
+
+	:root {
+		--downloads-item-height: 50px !important;
+	}
+
+	.downloadTypeIcon image {
+		background-size: cover !important;
+		/*display: -moz-box !important;*/
+		margin-left: 10px !important;
+	}
+
+	.downloadButton {
+		/*appearance: none !important;*/
+		background: transparent !important;
+		background-color: #161a27 !important;
+		border: none !important;
+	}
+
+	.downloadButton:hover {
+		/*appearance: none !important;*/
+		background: transparent !important;
+		background-color: #1e90ff !important;
+		border: none !important;
+	}
+
+	#clearDownloadsButton label {
+		margin-left: 6px !important;
+		margin-top: 1px !important;
+		opacity: 1 !important;
+		color: #ffffff !important;
+	}
+
+	#clearDownloadsButton {
+		background: #1e90ff !important;
+		color: #ffffff !important;
+		border: 2px solid #1e90ff !important;
+		border-radius: 2px !important;
+	}
+
+	.downloadMainArea {
+		border: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+		border-radius: 4px !important;
+	}
+
+	.downloadMainArea:hover {
+		border: none !important;
+		outline: none !important;
+		box-shadow: none !important;
+		background-color: #1e90ff80 !important;
+		border-radius: 4px !important;
+	}
+
+
+	#downloadsRichListBox>richlistitem {
+		background-image: none !important;
+		background-image: none !important;
+		border-radius: 4px !important;
+		outline: none !important;
+	}
+
+	#downloadsRichListBox>richlistitem:hover {
+		background-color: #1e90ff80 !important;
+		background-image: none !important;
+		background-clip: none !important;
+		border-radius: 4px !important;
+		outline: none !important;
+	}
+
+	#downloadsRichListBox>richlistitem[selected] {
+		background-color: #1e90ff80 !important;
+		background-image: none !important;
+		background-clip: none !important;
+		border-radius: 4px !important;
+		outline: none !important;
+	}
+}

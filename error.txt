@@ -1,0 +1,50 @@
+
+/* about:about */
+#urlbar[pageproxystate='valid'] #identity-box.unknownIdentity + box + moz-input-box {
+  color: var(--highlight-high);
+}
+ 
+/* https://mixed.badssl.com/ */
+#urlbar[pageproxystate='valid'] #identity-box.mixedDisplayContent + box + moz-input-box{
+  color: #ffcd42;
+}
+ 
+/* https://very.badssl.com/ */
+#urlbar[pageproxystate='valid'] #identity-box.mixedDisplayContentLoadedActiveBlocked + box + moz-input-box {
+  color: #ffcd42;
+}
+ 
+/* https://self-signed.badssl.com/ but add certificate exception */
+#urlbar[pageproxystate='valid'] #identity-box.certUserOverridden + box + moz-input-box {
+  color: #ffcd42;
+}
+ 
+/* Don't know an example for this */
+#urlbar[pageproxystate='valid'] #identity-box.weakCipher + box + moz-input-box {
+  color: #ffcd42;
+}
+ 
+/* https://mixed-script.badssl.com/ but disable protection */
+#urlbar[pageproxystate='valid'] #identity-box.mixedActiveContent + box + moz-input-box {
+  color: #ff554f;
+}
+ 
+/* http://http-login.badssl.com/ */
+#urlbar[pageproxystate='valid'] #identity-box.insecureLoginForms + box + moz-input-box {
+  color: #ff554f;
+}
+ 
+#urlbar[pageproxystate='valid'] #identity-box.notSecure + box + moz-input-box {
+  color: #ff554f;
+}
+ 
+/* Remove padding above tabbar in compact mode */
+#main-window[sizemode="normal"] > #titlebar {
+    -moz-appearance: initial !important;
+}
+ 
+.toolbarbutton-icon, .toolbarbutton-badge-stack {
+    border-radius: 0px !important;
+    /* height: 30px !important; */
+    max-height: 32px !important;
+}

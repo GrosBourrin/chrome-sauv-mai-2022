@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="19px" viewBox="0 0 13 19" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>Underline</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Stage" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-886.000000, -103.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M897,103 L899,103 L899,111.5 C899,115.089851 896.089851,118 892.5,118 C888.910149,118 886,115.089851 886,111.5 L886,103 L888,103 L888,111.5 C888,113.985281 890.014719,116 892.5,116 C894.985281,116 897,113.985281 897,111.5 L897,103 Z M886,122 L886,120 L898.998934,120 L898.998934,122 L886,122 Z" id="Underline"></path>
+        </g>
+    </g>
+</svg>

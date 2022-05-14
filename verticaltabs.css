@@ -1,0 +1,42 @@
+/* Sidebar min and max width removal */
+#sidebar {
+	max-width: none !important;
+	min-width: 0px !important;
+}
+
+/* Hide splitter, when using Tree Style Tab. */
+#sidebar-box+#sidebar-splitter {
+	display: none !important;
+}
+
+/* Hide sidebar header, when using Tree Style Tab. 
+#sidebar-box #sidebar-header {
+	visibility: collapse;
+}*/
+
+/* Shrink sidebar until hovered, when using Tree Style Tab. */
+:root {
+	--thin-tab-width: 190px;
+	--wide-tab-width: 350px;
+}
+
+#sidebar-box {
+	min-width: var(--wide-tab-width) !important;
+	max-width: none !important;
+}
+
+#sidebar-box {
+	position: relative !important;
+	transition: all 100ms !important;
+	min-width: var(--thin-tab-width) !important;
+	max-width: var(--thin-tab-width) !important;
+}
+
+#sidebar-box:hover {
+	transition: all 200ms !important;
+	transition-delay: 0.2s !important;
+	min-width: var(--wide-tab-width) !important;
+	max-width: var(--wide-tab-width) !important;
+	margin-right: calc((var(--wide-tab-width) - var(--thin-tab-width)) * -1) !important;
+	z-index: 1;
+}

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>fb-messenger</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-268.000000, -100.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M279.864211,100 C273.311789,100 268,104.967034 268,111.094219 C268,114.579804 269.719094,117.689902 272.407608,119.723774 L272.407608,123.969721 L276.456453,121.723864 C277.535819,122.026023 278.679728,122.188438 279.864211,122.188438 C286.416634,122.188438 291.728423,117.221374 291.728423,111.094189 C291.728423,104.967004 286.416634,100 279.864211,100 Z M281.113751,114.877132 L278.045253,111.689389 L272.135909,114.957404 L278.614672,108.082204 L281.6832,111.269947 L287.592513,108.001932 L281.113751,114.877132 Z" id="fb-messenger"></path>
+        </g>
+    </g>
+</svg>

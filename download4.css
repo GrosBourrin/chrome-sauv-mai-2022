@@ -1,0 +1,46 @@
+/* Downloads popover */
+#downloadsPanel-mainView .download-state {
+	padding: 8px !important;
+	border: 0 !important;
+	border-radius: 5px !important;
+	display: flex;
+	align-items: center;
+}
+
+#downloadsPanel-mainView .download-state:hover {
+	background-color: #1e90ff80 !important;
+}
+
+#downloadsPanel-mainView .download-state:last-child {
+	margin-bottom: 8px !important;
+}
+
+#downloadsPanel-mainView .downloadMainArea {
+	flex: 1;
+	display: flex;
+}
+
+#downloadsPanel-mainView .downloadMainArea:hover {
+	background: transparent !important;
+}
+
+#downloadsPanel-mainView .downloadTypeIcon {
+	margin: 0 !important;
+	margin-right: 6px !important;
+}
+
+#downloadsPanel-mainView .downloadContainer {
+	margin-inline-end: 0 !important;
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+}
+
+#downloadsPanel-mainView .download-state .downloadButton .button-box {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+#downloadsPanel-mainView .download-state toolbarseparator {
+	display: none;
+}

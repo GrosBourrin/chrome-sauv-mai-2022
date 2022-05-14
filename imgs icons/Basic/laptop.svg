@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="18px" viewBox="0 0 24 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>laptop</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-64.000000, -253.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M85,264 L88,268 L88,268.998957 C88,270.104102 87.1029738,271 85.9950534,271 L66.0049466,271 C64.8976452,271 64,270.099901 64,268.998957 L64,268 L67,264 L67,255.00853 C67,253.89925 67.8926228,253 68.9950893,253 L83.0049107,253 C84.1067681,253 85,253.90195 85,255.00853 L85,264 Z M84,264 L84,255.00853 C84,254.451599 83.5518396,254 83.0049107,254 L68.9950893,254 C68.4466741,254 68,254.449778 68,255.00853 L68,264 L84,264 Z M65,268.333333 L65,268.998957 C65,269.548955 65.4512699,270 66.0049466,270 L85.9950534,270 C86.5508634,270 87,269.551642 87,268.998957 L87,268.333333 L84.5,265 L67.5,265 L65,268.333333 Z M68,269 L68,268 L84,268 L84,269 L68,269 Z M70,267 L70,266 L82,266 L82,267 L70,267 Z" id="laptop"></path>
+        </g>
+    </g>
+</svg>

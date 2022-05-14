@@ -1,0 +1,434 @@
+#bookmarks-menu-button,
+
+#context_bookmarkTab,
+
+#context_closeTabOptions,
+
+#context_moveTabOptions,
+
+#context_openANewTab,
+
+#context_openANewTab+menuseparator,
+
+#context_pinTab,
+
+#context_reopenClosedTab,
+
+#context_reopenInContainer,
+
+#context_selectAllTabs,
+
+#context_sendTabToDevice_separator,
+
+#context_sendTabToDevice,
+
+#context_undoCloseTab,
+
+#context_unpinTab,
+
+#context-back,
+
+#context-bidi-page-direction-toggle,
+
+#context-bookmarkframe,
+
+#context-bookmarkpage,
+
+#context-copy,
+
+#context-copyaudiourl,
+
+#context-copyemail,
+
+#context-copyimage-contents,
+
+#context-copyimage,
+
+#context-copylink,
+
+#context-copyvideourl,
+
+#context-cut,
+
+#context-delete,
+
+#context-forward,
+
+#context-inspect-a11y,
+
+#context-inspect,
+
+#context-keywordfield,
+
+#context-leave-dom-fullscreen,
+
+#context-media-eme-separator,
+
+#context-media-hidecontrols,
+
+#context-media-loop,
+
+#context-media-mute,
+
+#context-media-playbackrate-050x,
+
+#context-media-playbackrate-100x,
+
+#context-media-playbackrate-125x,
+
+#context-media-playbackrate-150x,
+
+#context-media-playbackrate-200x,
+
+#context-media-playbackrate,
+
+#context-media-sep-commands,
+
+#context-media-sep-video-commands,
+
+#context-media-showcontrols,
+
+#context-media-unmute,
+
+#context-navigation,
+
+#context-openframe,
+
+#context-openframeintab,
+
+#context-openlink,
+
+#context-openlinkincurrent,
+
+#context-openlinkinusercontext-menu,
+
+#context-openlinkprivate,
+
+#context-paste,
+
+#context-pocket,
+
+#context-print-selection,
+
+#context-printframe+menuseparator,
+
+#context-printframe,
+
+#context-redo,
+
+#context-reload,
+
+#context-reloadframe+menuseparator,
+
+#context-reloadframe,
+
+#context-saveaudio,
+
+#context-saveframe+menuseparator,
+
+#context-saveframe,
+
+#context-savelink,
+
+#context-savelinktopocket,
+
+#context-savepage,
+
+#context-savevideo,
+
+#context-searchselect-private+menuseparator,
+
+#context-searchselect-private,
+
+#context-searchselect,
+
+#context-selectall,
+
+#context-sendaudio,
+
+#context-sendimage,
+
+#context-sendlinktodevice,
+
+#context-sendpagetodevice,
+
+#context-sendvideo,
+
+#context-sep-bidi,
+
+#context-sep-copylink,
+
+#context-sep-ctp,
+
+#context-sep-navigation,
+
+#context-sep-open,
+
+#context-sep-redo,
+
+#context-sep-screenshots,
+
+#context-sep-selectall,
+
+#context-sep-sendlinktodevice,
+
+#context-sep-sendpagetodevice,
+
+#context-sep-setbackground,
+
+#context-sep-viewbgimage,
+
+#context-sep-viewsource-commands,
+
+#context-sep-viewsource,
+
+#context-setDesktopBackground,
+
+#context-showonlythisframe,
+
+#context-stop,
+
+#context-take-frame-screenshot+menuseparator,
+
+#context-take-frame-screenshot,
+
+#context-take-screenshot,
+
+#context-undo,
+
+#context-video-fullscreen,
+
+#context-video-pictureinpicture,
+
+#context-video-saveimage,
+
+#context-viewframeinfo,
+
+#context-viewframesource,
+
+#context-viewimage,
+
+#context-viewimageinfo,
+
+#context-viewpartialsource-selection,
+
+#context-viewsource-goToLine,
+
+#context-viewsource-highlightSyntax,
+
+#context-viewsource-wrapLongLines,
+
+#context-viewsource,
+
+#context-viewvideo,
+
+#fill-login-generated-password,
+
+#fill-login-separator,
+
+#fill-login,
+
+#frame-sep,
+
+#inspect-separator,
+
+#manage-saved-logins,
+
+#nav-bar .bookmark-item,
+
+#open-frame-sep,
+
+#page-menu-separator,
+
+#pageAction-panel-emailLink,
+
+#pageAction-panel-sendToDevice,
+
+#passwordmgr-items-separator,
+
+#placesContext_copy,
+
+#placesContext_createBookmark,
+
+#placesContext_cut,
+
+#placesContext_delete_history,
+
+#placesContext_delete,
+
+#placesContext_deleteHost,
+
+#placesContext_deleteSeparator,
+
+#placesContext_editSeparator,
+
+#placesContext_new\:bookmark,
+
+#placesContext_new\:folder,
+
+#placesContext_new\:separator,
+
+#placesContext_newSeparator,
+
+#placesContext_open,
+
+#placesContext_open\:newprivatewindow,
+
+#placesContext_open\:newwindow,
+
+#placesContext_openBookmarkContainer\:tabs,
+
+#placesContext_openBookmarkLinks\:tabs,
+
+#placesContext_openContainer\:tabs,
+
+#placesContext_openLinks\:tabs,
+
+#placesContext_openSeparator,
+
+#placesContext_paste_group,
+
+#placesContext_paste,
+
+#placesContext_pasteSeparator,
+
+#placesContext_showAllBookmarks,
+
+#screenshots_mozilla_org_create-screenshot,
+
+#screenshots_mozilla_org-menuitem-_create-screenshot,
+
+#sidebar-close,
+
+#sidebar-header,
+
+#sidebar-switcher-target,
+
+#spell-add-dictionaries-main,
+
+#spell-check-dictionary-en-US,
+
+#spell-check-enabled,
+
+#spell-dictionaries,
+
+#spell-language-separator,
+
+#spell-no-suggestions,
+
+#spell-separator,
+
+#spell-suggestions-separator,
+
+#spell-undo-add-to-dictionary,
+
+#star-button,
+
+#tabContextMenu .share-tab-url-item,
+
+#tabContextMenu #context_bookmarkSelectedTabs,
+
+#tabContextMenu #context_bookmarkTab,
+
+#tabContextMenu #context_closeOtherTabs,
+
+#tabContextMenu #context_closeTab,
+
+#tabContextMenu #context_closeTabOptions,
+
+#tabContextMenu #context_closeTabsToTheEnd,
+
+#tabContextMenu #context_closeTabsToTheStart,
+
+#tabContextMenu #context_dummy,
+
+#tabContextMenu #context_duplicateTab,
+
+#tabContextMenu #context_duplicateTabs+menuseparator,
+
+#tabContextMenu #context_duplicateTabs,
+
+#tabContextMenu #context_moveTabOptions,
+
+#tabContextMenu #context_moveToEnd,
+
+#tabContextMenu #context_moveToStart,
+
+#tabContextMenu #context_openANewTab+menuseparator,
+
+#tabContextMenu #context_openANewTab,
+
+#tabContextMenu #context_openTabInWindow,
+
+#tabContextMenu #context_pinSelectedTabs,
+
+#tabContextMenu #context_pinTab,
+
+#tabContextMenu #context_reloadSelectedTabs,
+
+#tabContextMenu #context_reloadTab,
+
+#tabContextMenu #context_reopenInContainer,
+
+#tabContextMenu #context_selectAllTabs+menuseparator,
+
+#tabContextMenu #context_selectAllTabs,
+
+#tabContextMenu #context_sendTabToDevice,
+
+#tabContextMenu #context_toggleMuteSelectedTabs,
+
+#tabContextMenu #context_toggleMuteTab,
+
+#tabContextMenu #context_undoCloseTab,
+
+#tabContextMenu #context_unpinSelectedTabs,
+
+#tabContextMenu #context_unpinTab,
+
+#toggle_PersonalToolbar,
+
+#toolbar-context-menu .customize-context-moveToPanel,
+
+#toolbar-context-menu .customize-context-reportExtension+menuseparator,
+
+#toolbar-context-menu .customize-context-reportExtension,
+
+#toolbar-context-menu #toggle_PersonalToolbar,
+
+#toolbar-context-menu #toggle_toolbar-menubar,
+
+#toolbar-context-menu #toolbar-context-autohide-downloads-button,
+
+#toolbar-context-menu #toolbarItemsMenuSeparator,
+
+#toolbar-context-menu #viewToolbarsMenuSeparator,
+
+#toolbar-context-menu menuitem[data-l10n-id="toolbar-context-menu-bookmarks-toolbar-always-show-2"],
+
+#toolbar-context-menu menuitem[data-l10n-id="toolbar-context-menu-bookmarks-toolbar-never-show-2"],
+
+#toolbar-context-menu menuitem[data-l10n-id="toolbar-context-menu-bookmarks-toolbar-on-new-tab-2"],
+
+#toolbar-context-menu-bookmarks-toolbar-always-show-2,
+
+#toolbar-context-menu-bookmarks-toolbar-never-show-2,
+
+#toolbar-context-menu-bookmarks-toolbar-on-new-tab-2,
+
+#urlbar menuitem[cmd="cmd_cut"],
+
+#urlbar menuitem[cmd="cmd_delete"],
+
+#urlbar menuitem[cmd="cmd_redo"]+menuseparator,
+
+#urlbar menuitem[cmd="cmd_redo"],
+
+#urlbar menuitem[cmd="cmd_selectAll"],
+
+#urlbar menuitem[cmd="cmd_undo"],
+menu#frame,
+menuitem[label="Print Selection"],
+menuseparator.menuseparator-add-engine {
+	display: none !important;
+}

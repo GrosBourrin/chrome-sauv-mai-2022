@@ -1,0 +1,42 @@
+
+.ctrlTab-preview>.ctrlTab-preview-inner,
+#ctrlTab-showAll {
+	border: 2px solid transparent !important;
+	background: transparent !important;
+}
+
+.ctrlTab-preview:focus>.ctrlTab-preview-inner,
+#ctrlTab-showAll:focus {
+	border: 2px solid white !important;
+}
+
+.ctrlTab-preview,
+#ctrlTab-showAll {
+	color: white !important;
+	text-shadow: none !important;
+}
+
+.ctrlTab-preview,
+.ctrlTab-preview:hover:active {
+	background: transparent !important;
+	border: none !important;
+}
+
+.ctrlTab-preview-inner {
+	border: none !important;
+	border-radius: 0px !important;
+}
+
+.ctrlTab-canvas {
+	box-shadow: none !important;
+	transition: transform 100ms !important;
+}
+
+.ctrlTab-preview:hover:active .ctrlTab-canvas {
+	transform: scale(0.95) !important;
+	transition: transform 100ms !important;
+}
+
+#ctrlTab-panel {
+	--panel-background: #2B2B2BB0 !important;
+}

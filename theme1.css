@@ -1,0 +1,204 @@
+* Example userChrome.css file */
+/* Import your desired components first */
+
+@import url(chrome/tab_close_button_hide.css);
+@import url("chrome/dark_context_menus.css");
+@import url("chrome/Fx65_tabs_on_bottom.css");
+/* @import url("tabs/sound-indicator-to-the-left.css"); */
+/* @import url("chrome/multi-row_tabs.css"); */
+/* @import url("chrome/grid_overflow_menu.css"); */
+
+@import url("extensions/force-reload-in-address-bar-to-end.css");
+/* Overflow Menu width */
+
+#overflowMenu-customize-button,
+#widget-overflow .panel-arrowcontent,
+#widget-overflow .panel-subview-body {
+	max-width: 250px !important;
+}
+
+/* HIDE WINDOW CONTROLS */
+
+#window-controls,
+#titlebar>.browser-toolbar>.titlebar-buttonbox-container {
+	display: none
+}
+
+#nav-bar {
+	padding-inline: 12px
+}
+
+/* #TabsToolbar>.titlebar-buttonbox-container {
+    display: none
+} */
+/* @import url(chrome/multi-row_tabs.css); */
+/* @import url(chrome/multi-row_tabs_below_content.css); */
+/* @import url(chrome/multi-row_tabs_window_control_patch.css); */
+/* @import url(chrome/userChrome-tabs_on_bottom_Fx74-76_WindowsLinux.css); */
+/* @import url(chrome/multi-row_tabs_Fx66+.css); */
+/* @import url(chrome/userChrome-tabs_on_bottom_Fx74-76_WindowsLinux.css); */
+/* @import url(chrome/tab_close_button_always_on_hover.css); */
+/* @import url(chrome/tab_loading_progress_throbber.css); */
+/* @import url(chrome/button_effect_scale_onclick.css); */
+/* @import url(chrome/blank_page_background.css); */
+/* @import url(chrome/autohide_menubar.css); */
+/* @import url(chrome/hide_toolbox_top_bottom_borders.css); */
+/* @import url(chrome/vertical_context_navigation.css); */
+/* @import url(chrome/minimal_popup_scrollbars.css); */
+/* @import url(chrome/button_effect_icon_glow.css); */
+/* @import url(chrome/dark_context_menus.css); */
+/* @import url(chrome/dark_additional_windows.css); */
+/* @import url(chrome/dark_checkboxes_and_radios.css); */
+/* @import url(chrome/minimal_text_fields.css); */
+/* @import url(chrome/minimal_toolbarbuttons.css); */
+/* @import url(chrome/urlbar_centered_text.css); */
+/* Apply your custom modifications after imports */
+
+:root {
+	--toolbar-bgcolor: #242c3b !important;
+	--uc-menu-bkgnd: var(--toolbar-bgcolor);
+	--arrowpanel-background: var(--toolbar-bgcolor) !important;
+	--autocomplete-popup-background: var(--toolbar-bgcolor) !important;
+	--uc-menu-disabled: #5a5a5a !important;
+	--lwt-toolbar-field-focus: #242c3b !important;
+}
+
+#sidebar-box {
+	--sidebar-background-color: var(--toolbar-bgcolor) !important;
+}
+
+window.sidebar-panel {
+	--lwt-sidebar-background-color: rgb(36, 44, 59) !important;
+}
+
+/* HIDE TITLE BAR not working */
+/* 
+#titlebar {
+    visibility: collapse !important;
+} */
+/*** Tighten up drop-down/context/popup menu spacing ***/
+
+menupopup>menuitem,
+menupopup>menu {
+	padding-block: 4px !important;
+}
+
+:root {
+	--arrowpanel-menuitem-padding: 4px 8px !important;
+}
+
+/*** Proton Tabs Tweaks ***/
+/* Adjust tab corner shape, optionally remove space below tabs */
+
+#tabbrowser-tabs {
+	--user-tab-rounding: 4px;
+}
+
+@media (-moz-proton) {
+	.tab-background {
+		border-radius: var(--user-tab-rounding) var(--user-tab-rounding) 0px 0px 0px 0px !important;
+		margin-block: 0px 0px !important;
+	}
+}
+
+/** Unselected Tab - Divide line ********************************************/
+
+#tabbrowser-arrowscrollbox:not([overflowing]) .tabbrowser-tab[first-visible-unpinned-tab] .tab-background::before,
+.tabbrowser-tab:not([visuallyselected],
+	[multiselected],
+	:hover,
+	:first-child) .tab-background::before,
+#tabbrowser-arrowscrollbox:not([overflowing]) .tabbrowser-tab:not([visuallyselected],
+	[multiselected],
+	:hover)[last-visible-tab] .tab-background::after {
+	/* Box Model */
+	content: "";
+	display: block;
+	position: absolute;
+	top: 50%;
+	/* Bar shape */
+	width: 1px;
+	height: 20px;
+	overflow: hidden;
+	/* Bar Color */
+	opacity: var(--tab-separator-opacity);
+	transition: opacity .2s var(--ease-basic) !important;
+	background-color: color-mix(in srgb, currentColor 20%, transparent) !important;
+	/*  Replace var(--toolbarseparator-color) - Hard coded for compatibility */
+}
+
+.tab-background::before {
+	transform: translateX(-2.5px) translateY(calc(-50% + 1px)) !important;
+}
+
+.tabbrowser-tab[last-visible-tab] .tab-background::after {
+	right: 0;
+	transform: translateX(2.5px) translateY(calc(-50% + 1px)) !important;
+}
+
+.tabbrowser-tab:is([visuallyselected],
+	[multiselected],
+	:hover)+.tabbrowser-tab:not([visuallyselected]) .tab-background::before,
+.tabbrowser-tab[first-visible-unpinned-tab]:is([visuallyselected],
+	[multiselected],
+	:hover) .tab-background::before,
+#tabbrowser-arrowscrollbox[overflowing] tab.tabbrowser-tab[first-visible-unpinned-tab] .tab-background::before {
+	opacity: 0 !important;
+}
+
+/* Speaker playing icon to right */
+/** Sound Tab - Hide Label **************************************************/
+
+.tab-secondary-label:is([soundplaying],
+	[muted],
+	[activemedia-blocked],
+	[pictureinpicture]) {
+	display: none !important;
+}
+
+/** Sound Tab - Show with Favicons ******************************************/
+/* Makes the favicons always visible (also on hover) */
+
+.tab-icon-image:not([pinned]) {
+	opacity: 1 !important
+}
+
+/* show audio icon as a separate icon in compact mode */
+
+.tab-icon-stack:is([muted],
+	[soundplaying],
+	[activemedia-blocked]) {
+	grid-template-areas: "a s";
+}
+
+.tab-icon-overlay:is([muted],
+	[soundplaying],
+	[activemedia-blocked]) {
+	grid-area: s;
+}
+
+.tab-icon-overlay,
+.tab-icon-image {
+	opacity: 1 !important;
+}
+
+.tab-icon-overlay {
+	padding: 0 !important;
+}
+
+.tab-icon-overlay:hover {
+	background: none !important;
+}
+
+/*Remove extra icons from location bar*/
+
+#page-action-buttons> :not(hbox),
+#page-action-buttons hbox:not(#pageAction-urlbar-_e1ed7a80-7c11-4f7e-968b-79b551a0067f_) {
+	display: none !important;
+}
+
+/*Main menu separator grey color*/
+
+#appMenu-fxa-separator {
+	border-image: unset !important;
+}

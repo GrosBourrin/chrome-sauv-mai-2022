@@ -1,0 +1,442 @@
+/*
+@-moz-document url-prefix(chrome: //browser/content/preferences/cookies.xul) {
+
+	#CookiesDialog {
+		-moz-appearance: none !important;
+		background-color: var(--in-content-page-background) !important;
+	}
+
+	#domainCol,
+	#nameCol {
+		-moz-appearance: none !important;
+		border: none !important;
+	}
+
+	#domainCol {
+		border-right: 1px solid !important;
+		border-color: var(--in-content-box-border-color) !important;
+	}
+
+	.windowDialog,
+	textbox {
+		color: var(--in-content-page-color) !important;
+	}
+
+	textbox[type=search] {
+		-moz-appearance: none !important;
+		background-color: var(--in-content-box-background) !important;
+		border: 1px solid !important;
+		border-color: var(--in-content-box-border-color) !important;
+		border-radius: 3px !important;
+		padding: 2px 4px 2px 2px !important;
+	}
+
+	#cookiesList {
+		-moz-appearance: none !important;
+		border: 1px solid !important;
+		border-color: var(--in-content-box-border-color) !important;
+	}
+
+	button {
+		-moz-appearance: none !important;
+		background-color:#1e90ff !important;
+		border: 1px solid !important;
+		border-radius: 3px !important;
+		color: white !important;
+		border-color: #1e90ff !important;
+	}
+
+	button:hover {
+		background-color: #1e90ff50 !important;
+	}
+}
+
+@-moz-document url-prefix(chrome: //pippki) {
+
+	tab {
+		-moz-appearance: none !important;
+		background-color: var(--in-content-box-background) !important;
+		text-shadow: none !important;
+		padding: 0 8px !important;
+		color: var(--in-content-page-color);
+		border-right: 1px solid !important;
+		border-color: var(--in-content-box-border-color) !important;
+	}
+
+	tab:first-of-type {
+		border-top-left-radius: 4px !important;
+		border-bottom-left-radius: 4px !important;
+	}
+
+	tab:last-of-type {
+		border: none !important;
+		border-top-right-radius: 4px !important;
+		border-bottom-right-radius: 4px !important;
+	}
+
+	tab[selected=true] {
+		color: var(--in-content-selected-text) !important;
+	}
+
+	#certDetails {
+		-moz-appearance: none !important;
+		background-color: var(--in-content-page-background) !important;
+	}
+
+	tree {
+		-moz-appearance: none !important;
+		color: var(--in-content-page-color) !important;
+	}
+
+	treecol {
+		-moz-appearance: none !important;
+		border: 0 solid !important;
+		border-color: var(--in-content-box-background) !important;
+	}
+
+	treecolpicker {
+		-moz-appearance: none;
+		border: none !important;
+	}
+
+	.windowDialog,
+	dialog,
+	textbox {
+		color: var(--in-content-page-color) !important;
+	}
+
+	#certDumpVal,
+	.scrollfield,
+	textbox[type=search] {
+		-moz-appearance: none !important;
+		background-color: var(--in-content-box-background) !important;
+		border: 1px solid;
+		border-color: var(--in-content-box-border-color) !important;
+		border-radius: 3px !important;
+		padding: 2px 4px 2px 2px !important;
+	}
+
+	button {
+		-moz-appearance: none !important;
+		background-color: var(--in-content-page-background) !important;
+		border: 1px solid !important;
+		border-radius: 3px !important;
+		color: var(--in-content-page-color) !important;
+		border-color: var(--in-content-box-border-color) !important;
+	}
+
+	button:hover {
+		background-color: var(--in-content-box-background) !important;
+	}
+}
+*/
+/*
+@-moz-document url-prefix(chrome: //pippki/content/exceptionDialog) {
+
+	#exceptiondialog {
+		-moz-appearance: none !important;
+		background-color: var(--tone-8) !important
+	}
+
+	textbox {
+		-moz-appearance: none !important;
+		min-height: 20px !important;
+		background: var(--in-content-box-background) !important;
+		border: 1px solid var(--in-content-box-border-color) !important;
+		padding: 1px !important;
+	}
+}
+
+moz-extension: //cfde5ceb-cf73-4442-a396-f56c8cf678a3/
+*/
+/*#1b1924
+:root {
+	--checkmark: #ffffff !important;
+	--checkbox-checked-ink: #ffffff !important;
+}
+*/
+/*
+@-moz-document url("moz-extension://184303c8-9979-4331-93c3-983ad9230d69/options.html") {
+
+	html,
+	body,
+	.stack.inline-options-stack {
+		font-family: Fira Sans !important;
+		background-color: #161a27!important;
+		color: #ffffff !important;
+	}
+
+}*/
+/*
+@-moz-document url("moz-extension://cfde5ceb-cf73-4442-a396-f56c8cf678a3/options/index.html") {
+
+	html,
+	body,
+	.stack.inline-options-stack {
+		font-family: Fira Sans !important;
+		font-size: 14px !important;
+		background-color: #161a27!important;
+		color: #ffffff !important;
+		padding-top: 5px !important;
+	}
+
+}
+
+@-moz-document url("moz-extension://b32e2b8f-6a5f-4b24-b66e-fa2da4a4e7df/options.html") {
+
+	html,
+	body,
+	.stack.inline-options-stack {
+		font-family: Fira Sans !important;
+		font-size: 14px !important;
+		background-color: #161a27!important;
+		color: #ffffff !important;
+		padding-top: 5px !important;
+	}
+
+}
+*/
+/*
+@-moz-document url("about:newtab"),
+url("about:home") {
+	div.logo-and-wordmark {
+		display: none !important;
+	}
+}
+*/
+
+/*
+@-moz-document url(chrome://global/content/commonDialog.xhtml),
+url("chrome://mozapps/content/handling/permissionDialog.xhtml"),
+url("chrome://mozapps/content/handling/appChooser.xhtml"),
+url-prefix("chrome://global/content/print.html"),
+url("chrome://browser/content/places/bookmarkProperties.xhtml"),
+url("chrome://browser/content/places/bookmarkProperties2.xhtml") {
+
+	#commonDialogWindow,
+	#commonDialogWindow * {
+		--in-content-link-color: #1e90ff !important;
+		--in-content-link-color-hover: #1e90ff30 !important;
+		--in-content-link-color-active: #1e90ff !important;
+		--in-content-primary-button-background: #1e90ff90 !important;
+		--in-content-primary-button-background-hover: #1e90ff !important;
+		--in-content-primary-button-background-active: #1e90ff90 !important;
+		--in-content-primary-button-text-color: white !important;
+		--checkbox-border-color: var(--in-content-box-border-color) !important;
+		--checkbox-checked-border-color: transparent !important;
+		--checkbox-unchecked-bgcolor: var(--in-content-button-background) !important;
+		--checkbox-unchecked-hover-bgcolor: var(--in-content-button-background-hover) !important;
+		--checkbox-unchecked-active-bgcolor: var(--in-content-button-background-active) !important;
+		--checkbox-checked-bgcolor: var(--in-content-primary-button-background) !important;
+		--checkbox-checked-color: var(--in-content-primary-button-text-color) !important;
+		--checkbox-checked-hover-bgcolor: var(--in-content-primary-button-background-hover) !important;
+		--checkbox-checked-active-bgcolor: var(--in-content-primary-button-background-active) !important;
+	}
+
+	richlistitem>button[label] {
+		background-color: #1e90ff !important;
+	}
+
+	richlistitem:not([disabled="true"])>button[label]:is(:enabled, :not([disabled="true"])):hover {
+		background-color: #1e90ff70 !important;
+	}
+
+	richlistitem:not([disabled="true"])>button[label]:is(:enabled, :not([disabled="true"])):hover:active,
+	richlistitem>button[label][open],
+	richlistitem>button[label][open]:hover {
+		background-color: #1e90ff90 !important;
+	}
+}
+
+
+@-moz-document regexp("^(about:|chrome:|moz-extension:).*") {
+
+	:root {
+
+		--focus-outline-color: transparent !important;
+	}
+
+	html:not([role="dialog"]),
+	html:not([role="dialog"]) *,
+	html:not([role="dialog"]) body.activity-stream,
+	window:not([chromehidden]),
+	window:not([chromehidden])>dialog {
+
+		--focus-outline-color: transparent !important;
+	}
+}
+
+/*
+#ContentSelectDropdown,
+menupopup.in-menulist {
+	--menu-color: hsl(240, 60%, 99%) !important;
+	--menu-background-color: hsl(246.7, 9.7%, 18.2%) !important;
+	--menu-border-color: hsl(240, 5.7%, 37.8%) !important;
+	--menu-disabled-color: hsla(240, 60%, 99%, 0.4) !important;
+	--menuitem-hover-background-color: hsl(240, 6.8%, 34.5%) !important;
+	--menuitem-disabled-hover-background-color: hsla(240, 6.8%, 34.5%, 0.4) !important;
+	--menu-icon-opacity: 1 !important;
+	--arrowpanel-color: hsl(240, 60%, 99%) !important;
+	--arrowpanel-background: hsl(246.7, 9.7%, 18.2%) !important;
+	--panel-color: hsl(240, 60%, 99%) !important;
+	--panel-background: hsl(246.7, 9.7%, 18.2%) !important;
+}
+
+@-moz-document url-prefix("chrome://devtools/content/") {
+
+	:root,
+	menupopup {
+		--menu-color: hsl(240, 60%, 99%) !important;
+		--menu-background-color: hsl(246.7, 9.7%, 18.2%) !important;
+		--menu-border-color: hsl(240, 5.7%, 37.8%) !important;
+		--menu-disabled-color: hsla(240, 60%, 99%, 0.4) !important;
+		--menuitem-hover-background-color: hsl(240, 6.8%, 34.5%) !important;
+		--menuitem-disabled-hover-background-color: hsla(240, 6.8%, 34.5%, 0.4) !important;
+		--menu-icon-opacity: 1 !important;
+		--arrowpanel-color: hsl(240, 60%, 99%) !important;
+		--arrowpanel-background: hsl(246.7, 9.7%, 18.2%) !important;
+		--panel-color: hsl(240, 60%, 99%) !important;
+		--panel-background: hsl(246.7, 9.7%, 18.2%) !important;
+	}
+}
+
+*/
+/*
+:root,
+menupopup,
+.menupopup-arrowscrollbox {
+	--menuitem-hover-background-color: rgb(55, 55, 55) !important;
+	--menu-background-color: rgb(44, 44, 44) !important;
+	--menu-color: rgb(155, 155, 155) !important;
+	--menuitem-disabled-hover-background-color: rgba(55, 55, 55, 0.4) !important;
+	--menu-disabled-color: rgba(155, 155, 155, 0.4) !important;
+	--menu-border-color: rgb(55, 55, 55) !important;
+	--lwt-toolbar-field-background-color: rgb(34, 8, 151) !important;
+	--lwt-toolbar-field-color: rgb(0, 0, 0) !important;
+}
+#urlbar {
+	--lwt-toolbar-field-background-color: rgb(34, 8, 151) !important;
+	--lwt-toolbar-field-color: rgb(0, 0, 0) !important;
+}
+*/
+/*
+@-moz-document url-prefix("about:"),
+url(about:config),
+url-prefix("chrome://") {
+	tree {
+		background-color: #1e90ff50 !important;
+		color: whitesmoke !important;
+	}
+
+	treechildren::-moz-tree-row(odd) {
+		background-color: rgba(0, 0, 0, 0.3) !important;
+	}
+}
+*/
+
+/*
+.downloadProgress {
+	appearance: none !important;
+	margin: 3px 0 -2px 0 !important;
+	border: 1px solid transparent !important;
+	border-radius: 3px !important;
+	height: 8px !important;
+	background-color: var(--arrowpanel-dimmed) !important;
+	overflow: hidden !important;
+}
+
+.downloadProgress[paused] {
+	background-color: var(--desaturate-dimmed) !important;
+}
+
+.downloadProgress:not([value="0"])::-moz-progress-bar {
+	margin: 0 !important;
+	height: 100% !important;
+}
+
+.downloadProgress::-moz-progress-bar {
+	background-color: var(--toolbarbutton-icon-fill-attention) !important;
+}
+
+.downloadProgress[paused]::-moz-progress-bar {
+	background-color: var(--desaturate-dimmed-further) !important;
+}
+*/
+/*
+@-moz-document url("chrome://mozapps/content/downloads/unknownContentType.xhtml") {
+	#unknownContentType {
+		color: white !important;
+		background-color: #161a27!important;
+	}
+
+	button {
+
+		-moz-appearance: none !important;
+
+		background-color: #42414D !important;
+
+		color: white !important;
+
+		border: 1px solid #52525E !important;
+		border-radius: 4px !important;
+
+	}
+
+	button:hover {
+
+		background-color: #5f5e6e !important;
+		border: 1px solid #1e90ff !important;
+	}
+
+	#openHandler {
+		-moz-appearance: none !important;
+		background: #5f5e6e !important;
+		color: white !important;
+
+	}
+
+	#openHandlerBox {
+		-moz-appearance: none !important;
+		background: #5f5e6e !important;
+		border: 1px solid black !important;
+		border-radius: 4px !important
+	}
+
+}
+*/
+/*
+@-moz-document url("chrome://global/content/appPicker.xhtml") {
+
+	#app-picker {
+		color: white !important;
+		background-color: #161a27!important;
+	}
+
+	button {
+
+		-moz-appearance: none !important;
+
+		background-color: #42414D !important;
+
+		color: white !important;
+
+		border: 1px solid #52525E !important;
+		border-radius: 4px !important;
+
+	}
+
+	button:hover {
+
+		background-color: #5f5e6e !important;
+		border: 1px solid #1e90ff !important;
+	}
+
+	#app-picker-listbox {
+		-moz-appearance: none !important;
+		background-color: #2b2a33 !important;
+		color: white !important;
+		border: 1px solid #52525E !important;
+	}
+
+}
+*/

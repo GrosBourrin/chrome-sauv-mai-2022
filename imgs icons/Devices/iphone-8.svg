@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="14px" height="24px" viewBox="0 0 14 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>iphone-8</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-19.000000, -100.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M22.2666667,101 L21,101 C20.4477153,101 20,101.447715 20,102 L20,122 C20,122.552285 20.4477153,123 21,123 L31,123 C31.5522847,123 32,122.552285 32,122 L32,102 C32,101.447715 31.5522847,101 31,101 L29.7333333,101 L29.3979566,102.257663 C29.2812224,102.695416 28.8847724,103 28.4317217,103 L23.5682783,103 C23.1152276,103 22.7187776,102.695416 22.6020434,102.257663 L22.2666667,101 Z M21,100 L31,100 C32.1045695,100 33,100.895431 33,102 L33,122 C33,123.104569 32.1045695,124 31,124 L21,124 C19.8954305,124 19,123.104569 19,122 L19,102 C19,100.895431 19.8954305,100 21,100 Z M23.3016116,101 L23.5682783,102 L28.4317217,102 L28.6983884,101 L23.3016116,101 Z" id="iphone-8"></path>
+        </g>
+    </g>
+</svg>

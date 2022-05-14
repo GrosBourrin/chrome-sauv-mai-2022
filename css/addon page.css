@@ -1,0 +1,96 @@
+@-moz-document url-prefix("chrome://mozapps/content/extensions/aboutaddons.html"),
+url("about:addons") {
+	:root {
+		overflow-x: hidden;
+	}
+
+	.inline-options-stack {
+		min-height: 0px !important;
+		width: 100%;
+		background-color: transparent !important;
+	}
+
+	/* Remove this if it causes horizontal scrolling problems */
+
+	@media (min-width: 720px) {
+		#main {
+			max-width: unset !important;
+			padding-right: 28px;
+		}
+
+		addon-list>section,
+		recommended-addon-list {
+			padding: 1em;
+			display: grid;
+			grid-template-areas: "hd hd""cd cd";
+			grid-auto-columns: 1fr;
+			column-gap: 1em;
+		}
+
+		.card,
+		panel-list {
+			background: rgb(27, 27, 27) !important;
+		}
+
+		input[type="checkbox"].toggle-button:checked {
+			background: blue !important;
+		}
+
+		input[type="checkbox"].toggle-button {
+			background: darkmagenta !important;
+		}
+
+		addon-card .card-contents {
+			width: unset !important;
+			white-space: initial !important;
+		}
+
+		.card-heading-image {
+			max-width: calc(100% + 32px);
+		}
+
+		section>h2 {
+			grid-area: hd;
+		}
+
+		addon-card {
+			padding-bottom: 0px !important;
+			padding-top: 0px !important;
+			grid-area: auto;
+		}
+
+		addon-card .addon-description {
+			max-height: 3em;
+			scrollbar-width: none !important;
+		}
+	}
+
+	.addon-badge-recommended,
+	.addon-badge-private-browsing-allowed {
+		transform: scale(0.75) !important;
+	}
+
+	input[type="checkbox"].toggle-button:checked {
+		transform: scale(0.75) !important;
+	}
+
+	input[type="checkbox"].toggle-button {
+		transform: scale(0.75) !important;
+	}
+
+	@media (min-width: 1220px) {
+
+		addon-list>section,
+		recommended-addon-list {
+			grid-template-areas: "hd hd hd""cd cd cd";
+		}
+	}
+
+	@media (min-width: 1720px) {
+
+		addon-list>section,
+		recommended-addon-list {
+			grid-template-areas: "hd hd hd hd""cd cd cd cd";
+		}
+	}
+}

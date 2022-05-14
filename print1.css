@@ -1,0 +1,64 @@
+.dialogBox.printDialogBox[sizeto="available"] {
+	max-width: 98vw !important;
+	max-height: 89vh !important;
+	background-color: #17171E !important;
+}
+
+/* Level 2: Override the "Fit Height" limit and enabling scrolling */
+
+.dialogBox.printDialogBox[sizeto="available"] .previewStack {
+	overflow-y: auto !important;
+}
+
+@media (max-resolution: 92dpi) {
+	.dialogBox.printDialogBox[sizeto="available"] .previewStack {
+		min-height: calc(1056px / 1.1) !important;
+	}
+}
+
+@media (min-resolution: 92.05dpi) and (max-resolution: 100dpi) {
+	.dialogBox.printDialogBox[sizeto="available"] .previewStack {
+		min-height: calc(1056px / 1.15) !important;
+	}
+}
+
+@media (min-resolution: 100.05dpi) and (max-resolution: 115dpi) {
+	.dialogBox.printDialogBox[sizeto="available"] .previewStack {
+		min-height: calc(1056px / 1.25) !important;
+	}
+}
+
+@media (min-resolution: 115.05dpi) and (max-resolution: 124dpi) {
+	.dialogBox.printDialogBox[sizeto="available"] .previewStack {
+		min-height: calc(1056px / 1.4) !important;
+	}
+}
+
+@media (min-resolution: 124.05dpi) and (max-resolution: 138dpi) {
+	.dialogBox.printDialogBox[sizeto="available"] .previewStack {
+		min-height: calc(1056px / 1.55) !important;
+	}
+}
+
+@media (min-resolution: 138.05dpi) and (max-resolution: 149dpi) {
+	.dialogBox.printDialogBox[sizeto="available"] .previewStack {
+		min-height: calc(1056px / 1.7) !important;
+	}
+}
+
+@media (min-resolution: 149.05dpi) {
+	.dialogBox.printDialogBox[sizeto="available"] .previewStack {
+		min-height: calc((95vw - 250px) / 1.5) !important;
+	}
+}
+
+@-moz-document url-prefix("chrome://global/content/print.xhtml") {
+	* {
+		--in-content-page-background: #17171E !important;
+		--dropdown-bgcolor: #17171E !important;
+	}
+
+	.printPreviewBrowser {
+		background: black !important;
+	}
+}

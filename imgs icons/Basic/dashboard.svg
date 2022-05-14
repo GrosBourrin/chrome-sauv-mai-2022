@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="12px" viewBox="0 0 22 12" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>dashboard</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-116.000000, -256.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M127.913843,264.220513 L131.48791,260.646447 L132.195016,261.353553 L128.661795,264.886775 C128.875389,265.204993 129,265.587944 129,266 C129,267.104569 128.104569,268 127,268 C125.895431,268 125,267.104569 125,266 C125,264.895431 125.895431,264 127,264 C127.329256,264 127.63993,264.079564 127.913843,264.220513 Z M138,267 L137,267 C137,261.20101 132.79899,257 127,257 C121.20101,257 117,261.20101 117,267 L116,267 C116,260.648725 120.648725,256 127,256 C133.351275,256 138,260.648725 138,267 Z M127,267 C127.552285,267 128,266.552285 128,266 C128,265.447715 127.552285,265 127,265 C126.447715,265 126,265.447715 126,266 C126,266.552285 126.447715,267 127,267 Z" id="dashboard"></path>
+        </g>
+    </g>
+</svg>

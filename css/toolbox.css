@@ -1,0 +1,623 @@
+#toolbox-toolbar-mount>div>div.devtools-tabbar>div.toolbox-tabs-wrapper>div.toolbox-tabs>button>span,
+#toolbox-toolbar-mount>div>div.devtools-tabbar>div.toolbox-tabs-wrapper>div.toolbox-tabs>button>img,
+#command-button-pick::before,
+#command-button-pick,
+.devtools-tabbar-button:hover, .devtools-tabbar-button.checked,
+.devtools-tabbar-button,
+#toolbox-meatball-menu-button::before,
+.toolbox-tabs,
+#toolbox-meatball-menu-splitconsole,
+.tooltip-container[type="doorhanger"] .menuitem > button.command:-moz-any([role="menuitem"], [role="menuitemcheckbox"]),
+.tooltip-container[type="doorhanger"] .menuitem > .command > .accelerator,
+.devtools-tab.selected,
+.devtools-tab:hover, .devtools-tab:focus
+{
+  color: orange !important;
+  fill: orange !important;
+  background-color: rgb(48, 48, 48) !important;
+}
+
+
+*
+{
+  scrollbar-color: orange rgb(48, 48, 48) !important;
+}
+
+
+:root.theme-dark
+{
+  --theme-selection-background: rgba(255, 127, 0, .2) !important;
+  --theme-selection-color: orange !important;
+  --theme-selection-background-hover: rgba(255, 127, 0, .2) !important;
+  --theme-icon-color: orange !important;
+}
+
+
+.tooltip-container[type="doorhanger"] hr
+{
+  border-top: 1px solid orange !important;
+}
+
+
+
+vbox#toolbox-container > div > div > div.devtools-tabbar
+{
+  border-bottom: 1px solid rgb(48, 48, 48) !important;
+}
+
+
+
+.devtools-togglebutton, .devtools-button,
+.tooltip-container[type="doorhanger"] .menu-standard-padding
+{
+  background: rgb(48, 48, 48) !important;
+}
+
+
+
+.tooltip-container[type="doorhanger"] .menuitem > .command:not(:-moz-any([disabled], [open], :active)):-moz-any(:hover, :focus),
+#toolbox-meatball-menu-splitconsole:hover,
+.tooltip-container[type="doorhanger"] .menuitem > .command > .accelerator:hover,
+/*couleure fond ligne sélectionnée dans partie gauche du sélecteur*/
+.theme-selected
+{
+  background-color: rgba(255, 127, 0, .2) !important;
+}
+
+
+.devtools-filterinput:focus,
+.devtools-searchinput:focus,
+.devtools-searchbox-no-match
+{
+  border-color: orange !important;
+}
+
+
+/*couleure flêche vers le haut popups Firefox*/
+.tooltip-container[type="doorhanger"] > .tooltip-panel, .tooltip-container[type="doorhanger"] > .tooltip-arrow::before
+{
+  background: orange !important;
+}
+
+
+/*Bordure popup 3-dots de la boite à outils du navigateur intégré*/
+#toolbox-meatball-menu
+{
+  border: 2px solid rgba(255, 127, 0, .2) !important;
+}
+
+
+/*Popup du 3-dots - couleure fond de "Esc" & "F1" quand souris sur ligne entière*/
+.tooltip-container[type="doorhanger"] .menuitem > .command:not(:-moz-any([disabled], [open], :active)):-moz-any(:hover, :focus)
+{
+  background-color: rgba(255, 127, 0, .2) !important;
+}
+
+#search-addons::-moz-selection,
+li.splitview-active,
+.theme-selected, .CodeMirror-hint-active,
+.tag-state .theme-selected[selected="true"],
+.tooltip-container[type="doorhanger"] .menuitem > .command:not(:-moz-any([disabled], [open], :active)):-moz-any(:hover, :focus)
+{
+  background-color: rgba(255, 127, 0, .2) !important;
+}
+
+
+
+@-moz-document url-prefix("chrome://devtools/")
+{
+	/*boite à outils du navigateur - onglet Éditeur de style - partie code droite - couleur de fond ligne active*/
+    .cm-s-mozilla .CodeMirror-activeline-background
+    {
+      background-color: rgb(35, 35, 39) !important;
+    }
+
+
+    /*boite à outils du navigateur - onglet Éditeur de style - partie code droite - couleur de fond partie surlignée*/
+    div.CodeMirror-activeline>pre..CodeMirror-line.::-moz-selection,
+	.CodeMirror.cm-s-mozilla pre, .CodeMirror.cm-s-mozilla pre.CodeMirror-line::-moz-selection,
+	/*menu en haut à droite - couleure fond indications raccourcis clavier des commandes*/
+	#toolbox-meatball-menu-splitconsole>span:hover,
+	#toolbox-meatball-menu-settings>span:hover
+    {
+      background-color: rgba(255, 127, 0, .2) !important;
+    }
+	
+	#toolbox-meatball-menu-splitconsole>span,
+	#toolbox-meatball-menu-settings>span
+	{
+	  background: transparent !important;
+	}
+
+
+    :root.theme-dark
+    {
+      --theme-selection-background: rgba(255, 127, 0, .2) !important;
+      --theme-selection-color: orange !important;
+      --theme-selection-background-hover: rgba(255, 127, 0, .2) !important;
+      --theme-icon-color: orange !important;
+	  
+	  --tab-line-hover-color: rgba(255,255,255,.2) !important;
+    }
+	
+	
+	/*case(s) du/des CSS modifié(s) non enregistré(s)*/
+	.splitview-nav .unsaved.splitview-active,
+	.splitview-nav .unsaved
+    {
+      background: linear-gradient( to right, #f0a 4px, #f0a4 4px, transparent ) !important;
+	  /*background: rgba(255, 127, 0, .4) !important;*/
+    }
+	/*couleure fond liste fichiers CSS & couleure fond vide*/
+	.splitview-nav,
+	.splitview-nav>li
+	{
+      background-color: rgb(48, 48, 48) !important;
+	  border-bottom: 1px solid rgb(48, 48, 48) !important;
+	}
+	/*fond mini bandeau entre fichiers CSS & bandeau menu du haut*/
+	.splitview-main > .devtools-toolbar,
+	/*couleure fond partie code partie gauche avec n° lignes de code*/
+	.cm-s-mozilla .CodeMirror-gutters,
+	/*.CodeMirror.cm-s-mozilla pre, .CodeMirror.cm-s-mozilla pre.CodeMirror-line,*/
+	.theme-sidebar,
+	/*couleure fond partir droite pour @media par exemple*/
+	.theme-toolbar, .devtools-toolbar, .devtools-sidebar-tabs tabs, .devtools-sidebar-alltabs, .cm-s-mozilla .CodeMirror-dialog,
+	
+	/*onglet inspecteur - rechercher dans HTML*/
+	.devtools-searchbox > .devtools-searchinput, .devtools-searchbox > .devtools-filterinput,
+	/**/
+	#ruleview-toolbar,
+	.ruleview-header.ruleview-expandable-header,
+	#computedview-tab,
+	#layoutview-tab,
+	#ruleview-tab,
+	#changesview-tab,
+	#fontinspector-tab,
+	#animationinspector-tab,
+	.devtools-button.sidebar-toggle.pane-collapsed,
+	#pseudo-class-panel-toggle,
+	#class-panel-toggle,
+	#ruleview-add-rule-button,
+	#print-simulation-toggle,
+	.tabs-navigation,
+	.ruleview-rule.devtools-monospace,
+	.ruleview-header,
+	/*couleure icône afficher masquer 3e panneau - inspecteur à 3 panneaux*/
+	#inspector-splitter-box .sidebar-toggle.pane-collapsed::before,
+	#inspector-splitter-box .sidebar-toggle,
+	/*sélecteur balises HTML en dessous code HTML*/
+	button#breadcrumbs-widget-item-0,
+	button#breadcrumbs-widget-item-0 > span,
+	button#breadcrumbs-widget-item-1,
+	button#breadcrumbs-widget-item-1 > span,
+	button#breadcrumbs-widget-item-2,
+	button#breadcrumbs-widget-item-2 > span,
+	button#breadcrumbs-widget-item-3,
+	button#breadcrumbs-widget-item-3 > span,
+	button#breadcrumbs-widget-item-4,
+	button#breadcrumbs-widget-item-4 > span,
+	button#breadcrumbs-widget-item-5,
+	button#breadcrumbs-widget-item-5 > span,
+	button#breadcrumbs-widget-item-6,
+	button#breadcrumbs-widget-item-6 > span,
+	button#breadcrumbs-widget-item-7,
+	button#breadcrumbs-widget-item-7 > span,
+	button#toolbox-tab-inspector,
+	command-button-pick,
+	div.CodeMirror-lines
+	{
+	  background-color: rgb(48, 48, 48) !important;
+	}
+	.tag-state::selection,
+	.CodeMirror.cm-s-mozilla::selection pre, .CodeMirror.cm-s-mozilla::selection pre.CodeMirror-line::selection,
+	/*couleure fond avec souris en survol onglet inspecteur partie gauche code HTML*/
+	.tag-line .tag-hover:not(.theme-selected)
+	{
+	  background: rgba(255, 127, 0, .2) !important;
+	}
+	/*couleure fond partir droite pour @media par exemple - trait inférieur*/
+	.theme-toolbar, .devtools-toolbar, .devtools-sidebar-tabs tabs, .devtools-sidebar-alltabs, .cm-s-mozilla .CodeMirror-dialog
+	{
+	  border-color: rgb(48, 48, 48) !important;
+	}
+	/*couleure fond partie code partie gauche avec n° lignes de code - bordure droite*/
+	.cm-s-mozilla .CodeMirror-gutters
+	{
+	  border-right-color: rgb(48, 48, 48) !important;
+	}
+	/*case du CSS actuel & modifié non enregistré(s)*/
+    .splitview-nav .splitview-active,
+	a.stylesheet-name label[value="userChrome.css"][selected]
+    {
+      /*background: linear-gradient( to right, #f0a 4px, #f0a4 4px, var(--theme-selection-background) ) var(--theme-selection-background) !important;*/
+	  background: rgba(255, 127, 0, .4) !important;
+    }
+    /* Auto-Highlight common user style filenames */
+    a.stylesheet-name label[value="userChrome.css"],
+	a.stylesheet-name label[value="userContent.css"]
+    {
+      color: orange !important;
+	  background-color: rebeccapurple !important;
+	  font-weight: bold !important;
+    }
+	/*icône oeuil à gauche du nom du fichier.xml*/
+	.splitview-nav,
+	/*icône oeuil à gauche du nom du fichier.xml lorsce que sélectionné*/
+	.splitview-nav .splitview-active,
+	/*nombre règles incluse dans fichier.css affiché en dessous du fichier.css*/
+	[class$="-rule-count"],
+	/*boutton sauvegarder*/
+	.stylesheet-saveButton,
+	/*n° lignes à gauche du code*/
+	.CodeMirror-linenumber,
+	a.stylesheet-name,
+	a.stylesheet-name[selected],
+	.devtools-toolbarbutton:not([label]) > .toolbarbutton-icon,
+	.devtools-toolbar,
+	.media-rule-condition,
+	.theme-link, .cm-s-mozilla .cm-link, .CodeMirror-Tern-type,
+	.devtools-tab-label,
+	#inspector-search.devtools-searchbox > input#inspector-searchbox.devtools-searchinput,
+	#inspector-element-add-button::before,
+	#inspector-eyedropper-toggle::before,
+	#ruleview-searchbox,
+	div#ruleview-command-toolbar > button,
+	#computedview-tab,
+	#layoutview-tab,
+	#ruleview-tab,
+	#changesview-tab,
+	#fontinspector-tab,
+	#animationinspector-tab,
+	.devtools-button:focus,
+	#pseudo-class-panel-toggle::before,
+	#class-panel-toggle::before,
+	#ruleview-add-rule-button::before,
+	#print-simulation-toggle,
+	.ruleview-header.ruleview-expandable-header,
+	.ruleview-ruleopen,
+	.ruleview-ruleclose,
+	.ruleview-expander.theme-twisty,
+	/*éléments/sélecteurs par défaut de Firefox - à désactiver car vaux aussi pour règles contenues dans userChrome.css & userContent.css*/
+	/*.ruleview-selector-pseudo-class,*/
+	/*boutton à gauche de règle pour afficher/masquer 3em panneau*/
+	.sidebar-toggle.pane-collapsed,
+	.ruleview-header,
+	/*mot élément ciblé - à masquer pour désactiver personnalisation car sinon cible recherchée dans userChrome.css & userContent.css plus en gras*/
+	span.ruleview-selectorcontainer[value="élément"],
+	/*noms règles avant ":" 2 points s'il y a dans nom de la règle - idem que précédent car impact les règles des 2 mêmes fichiers*/
+	/*.ruleview-selector,*/
+	/*icône entre nom de la règle CSS & accolade*/
+	.ruleview-selectorhighlighter,
+	/*.breadcrumbs-widget-item-8>span.breadcrumbs-widget-item-tag.plain*/
+	div.tabs > nav.tabs-navigation > button,
+	div#inspector-sidebar > div.devtools-sidebar-tabs > div.tabs > nav.tabs-navigation > button.sidebar-toggle,
+	.devtools-button.sidebar-toggle.pane-collapsed,
+	/*sélecteur balises HTML en dessous code HTML*/
+	button#breadcrumbs-widget-item-0,
+	button#breadcrumbs-widget-item-0 > span,
+	button#breadcrumbs-widget-item-1,
+	button#breadcrumbs-widget-item-1 > span,
+	button#breadcrumbs-widget-item-2,
+	button#breadcrumbs-widget-item-2 > span,
+	button#breadcrumbs-widget-item-3,
+	button#breadcrumbs-widget-item-3 > span,
+	button#breadcrumbs-widget-item-4,
+	button#breadcrumbs-widget-item-4 > span,
+	button#breadcrumbs-widget-item-5,
+	button#breadcrumbs-widget-item-5 > span,
+	button#breadcrumbs-widget-item-6,
+	button#breadcrumbs-widget-item-6 > span,
+	button#breadcrumbs-widget-item-7,
+	button#breadcrumbs-widget-item-7 > span,
+	button#breadcrumbs-widget-item-8,
+	button#breadcrumbs-widget-item-8 > span,
+	button#breadcrumbs-widget-item-9,
+	button#breadcrumbs-widget-item-9 > span,
+	button#breadcrumbs-widget-item-10,
+	button#breadcrumbs-widget-item-10 > span,
+	button#breadcrumbs-widget-item-11,
+	button#breadcrumbs-widget-item-11 > span,
+	button#breadcrumbs-widget-item-12,
+	button#breadcrumbs-widget-item-12 > span,
+	button#breadcrumbs-widget-item-13,
+	button#breadcrumbs-widget-item-13 > span,
+	button#breadcrumbs-widget-item-14,
+	button#breadcrumbs-widget-item-14 > span,
+	button#breadcrumbs-widget-item-15,
+	button#breadcrumbs-widget-item-15 > span,
+	button#breadcrumbs-widget-item-16,
+	button#breadcrumbs-widget-item-16 > span,
+	button#breadcrumbs-widget-item-17,
+	button#breadcrumbs-widget-item-17 > span,
+	button#breadcrumbs-widget-item-18,
+	button#breadcrumbs-widget-item-18 > span,
+	button#breadcrumbs-widget-item-19,
+	button#breadcrumbs-widget-item-19 > span,
+	button#breadcrumbs-widget-item-20,
+	button#breadcrumbs-widget-item-20 > span,
+	button#breadcrumbs-widget-item-21,
+	button#breadcrumbs-widget-item-21 > span,
+	button#breadcrumbs-widget-item-22,
+	button#breadcrumbs-widget-item-22 > span,
+	.breadcrumbs-widget-item,
+	.breadcrumbs-widget-item-id.plain,
+	span.breadcrumbs-widget-item-classes.plain,
+	.toolbarbutton-icon,
+	button#toolbox-tab-inspector,
+	command-button-pick,
+	/**/
+	h3.stylesheet-title,
+	span.breadcrumbs-widget-item-classes.plain,
+	span.breadcrumbs-widget-item-tag.plain,
+	/*couleure bordure inférieure panneau à droite*/
+	.theme-dark .media-rule-label
+	{
+	  border-bottom-color: rgb(48, 48, 48) !important;
+	}
+	div#inspector-sidebar > div.devtools-sidebar-tabs > div.tabs > nav.tabs-navigation > button.sidebar-toggle,
+	.devtools-button.sidebar-toggle.pane-collapsed,
+	/*couleure icône afficher masquer 3e panneau - inspecteur à 3 panneaux*/
+	#inspector-splitter-box .sidebar-toggle.pane-collapsed::before,
+	#inspector-splitter-box .sidebar-toggle::before,
+	/*case(s) du/des CSS modifié(s) non enregistré(s)*/
+	.splitview-nav .unsaved.splitview-active,
+	.splitview-nav .unsaved
+    {
+      background: linear-gradient( to right, #f0a 4px, #f0a4 4px, transparent ) !important;
+	  /*background: rgba(255, 127, 0, .4) !important;*/
+    }
+	/*couleure fond liste fichiers CSS & couleure fond vide*/
+	.splitview-nav,
+	.splitview-nav>li
+	{
+      background-color: rgb(48, 48, 48) !important;
+	  border-bottom: 1px solid rgb(48, 48, 48) !important;
+	}
+	/*fond mini bandeau entre fichiers CSS & bandeau menu du haut*/
+	.splitview-main > .devtools-toolbar,
+	/*couleure fond partie code partie gauche avec n° lignes de code*/
+	.cm-s-mozilla .CodeMirror-gutters,
+	.theme-sidebar,
+	/*couleure fond partir droite pour @media par exemple*/
+	.theme-toolbar, .devtools-toolbar, .devtools-sidebar-tabs tabs, .devtools-sidebar-alltabs, .cm-s-mozilla .CodeMirror-dialog,
+	
+	/*onglet inspecteur - rechercher dans HTML*/
+	.devtools-searchbox > .devtools-searchinput, .devtools-searchbox > .devtools-filterinput,
+	/**/
+	#ruleview-toolbar,
+	.ruleview-header.ruleview-expandable-header,
+	#computedview-tab,
+	#layoutview-tab,
+	#ruleview-tab,
+	#changesview-tab,
+	#fontinspector-tab,
+	#animationinspector-tab,
+	.devtools-button.sidebar-toggle.pane-collapsed,
+	#pseudo-class-panel-toggle,
+	#class-panel-toggle,
+	#ruleview-add-rule-button,
+	#print-simulation-toggle,
+	.tabs-navigation,
+	.ruleview-rule.devtools-monospace,
+	.ruleview-header,
+	/*couleure icône afficher masquer 3e panneau - inspecteur à 3 panneaux*/
+	#inspector-splitter-box .sidebar-toggle.pane-collapsed::before,
+	#inspector-splitter-box .sidebar-toggle,
+	/*sélecteur balises HTML en dessous code HTML*/
+	button#breadcrumbs-widget-item-0,
+	button#breadcrumbs-widget-item-0 > span,
+	button#breadcrumbs-widget-item-1,
+	button#breadcrumbs-widget-item-1 > span,
+	button#breadcrumbs-widget-item-2,
+	button#breadcrumbs-widget-item-2 > span,
+	button#breadcrumbs-widget-item-3,
+	button#breadcrumbs-widget-item-3 > span,
+	button#breadcrumbs-widget-item-4,
+	button#breadcrumbs-widget-item-4 > span,
+	button#breadcrumbs-widget-item-5,
+	button#breadcrumbs-widget-item-5 > span,
+	button#breadcrumbs-widget-item-6,
+	button#breadcrumbs-widget-item-6 > span,
+	button#breadcrumbs-widget-item-7,
+	button#breadcrumbs-widget-item-7 > span,
+	button#toolbox-tab-inspector,
+	command-button-pick,
+	/*boite à outils du navigateur - onglet Éditeur de style - partie code droite - couleur de fond ligne active*/
+    .cm-s-mozilla .CodeMirror-activeline-background
+	{
+	  background-color: rgb(48, 48, 48) !important;
+	}
+	.tag-state::selection,
+	.CodeMirror.cm-s-mozilla::selection pre, .CodeMirror.cm-s-mozilla::selection pre.CodeMirror-line::selection,
+	/*couleure fond avec souris en survol onglet inspecteur partie gauche code HTML*/
+	.tag-line .tag-hover:not(.theme-selected),
+	.tooltip-container[type="doorhanger"] .menuitem > .command:not(:-moz-any([disabled], [open], :active)):-moz-any(:hover, :focus)
+	{
+	  background-color: rgba(255, 127, 0, .2) !important;
+	}
+	/*couleure fond partir droite pour @media par exemple - trait inférieur*/
+	.theme-toolbar, .devtools-toolbar, .devtools-sidebar-tabs tabs, .devtools-sidebar-alltabs, .cm-s-mozilla .CodeMirror-dialog
+	{
+	  border-color: rgb(48, 48, 48) !important;
+	}
+	/*couleure fond partie code partie gauche avec n° lignes de code - bordure droite*/
+	.cm-s-mozilla .CodeMirror-gutters
+	{
+	  border-right-color: rgb(48, 48, 48) !important;
+	}
+	/*case du CSS actuel & modifié non enregistré(s)*/
+    .splitview-nav .splitview-active,
+	a.stylesheet-name label[value="userChrome.css"][selected]
+    {
+      /*background: linear-gradient( to right, #f0a 4px, #f0a4 4px, var(--theme-selection-background) ) var(--theme-selection-background) !important;*/
+	  background: rgba(255, 127, 0, .4) !important;
+    }
+    /* Auto-Highlight common user style filenames */
+    a.stylesheet-name label[value="userChrome.css"],
+	a.stylesheet-name label[value="userContent.css"]
+    {
+      color: orange !important;
+	  background-color: rebeccapurple !important;
+	  font-weight: bold !important;
+    }
+	/*icône oeuil à gauche du nom du fichier.xml*/
+	.splitview-nav,
+	/*icône oeuil à gauche du nom du fichier.xml lorsce que sélectionné*/
+	.splitview-nav .splitview-active,
+	/*nombre règles incluse dans fichier.css affiché en dessous du fichier.css*/
+	[class$="-rule-count"],
+	/*boutton sauvegarder*/
+	.stylesheet-saveButton,
+	/*n° lignes à gauche du code*/
+	.CodeMirror-linenumber,
+	a.stylesheet-name,
+	a.stylesheet-name[selected],
+	.devtools-toolbarbutton:not([label]) > .toolbarbutton-icon,
+	.devtools-toolbar,
+	.media-rule-condition,
+	.theme-link, .cm-s-mozilla .cm-link, .CodeMirror-Tern-type,
+	.devtools-tab-label,
+	#inspector-search.devtools-searchbox > input#inspector-searchbox.devtools-searchinput,
+	#inspector-element-add-button::before,
+	#inspector-eyedropper-toggle::before,
+	#ruleview-searchbox,
+	div#ruleview-command-toolbar > button,
+	#computedview-tab,
+	#layoutview-tab,
+	#ruleview-tab,
+	#changesview-tab,
+	#fontinspector-tab,
+	#animationinspector-tab,
+	.devtools-button:focus,
+	#pseudo-class-panel-toggle::before,
+	#class-panel-toggle::before,
+	#ruleview-add-rule-button::before,
+	#print-simulation-toggle,
+	.ruleview-header.ruleview-expandable-header,
+	.ruleview-ruleopen,
+	.ruleview-ruleclose,
+	.ruleview-expander.theme-twisty,
+	/*éléments/sélecteurs par défaut de Firefox - à désactiver car vaux aussi pour règles contenues dans userChrome.css & userContent.css*/
+	/*.ruleview-selector-pseudo-class,*/
+	/*boutton à gauche de règle pour afficher/masquer 3em panneau*/
+	.sidebar-toggle.pane-collapsed,
+	.ruleview-header,
+	/*mot élément ciblé - à masquer pour désactiver personnalisation car sinon cible recherchée dans userChrome.css & userContent.css plus en gras*/
+	span.ruleview-selectorcontainer[value="élément"],
+	/*noms règles avant ":" 2 points s'il y a dans nom de la règle - idem que précédent car impact les règles des 2 mêmes fichiers*/
+	/*.ruleview-selector,*/
+	/*icône entre nom de la règle CSS & accolade*/
+	.ruleview-selectorhighlighter,
+	/*.breadcrumbs-widget-item-8>span.breadcrumbs-widget-item-tag.plain*/
+	div.tabs > nav.tabs-navigation > button,
+	div#inspector-sidebar > div.devtools-sidebar-tabs > div.tabs > nav.tabs-navigation > button.sidebar-toggle,
+	.devtools-button.sidebar-toggle.pane-collapsed,
+	/*sélecteur balises HTML en dessous code HTML*/
+	button#breadcrumbs-widget-item-0,
+	button#breadcrumbs-widget-item-0 > span,
+	button#breadcrumbs-widget-item-1,
+	button#breadcrumbs-widget-item-1 > span,
+	button#breadcrumbs-widget-item-2,
+	button#breadcrumbs-widget-item-2 > span,
+	button#breadcrumbs-widget-item-3,
+	button#breadcrumbs-widget-item-3 > span,
+	button#breadcrumbs-widget-item-4,
+	button#breadcrumbs-widget-item-4 > span,
+	button#breadcrumbs-widget-item-5,
+	button#breadcrumbs-widget-item-5 > span,
+	button#breadcrumbs-widget-item-6,
+	button#breadcrumbs-widget-item-6 > span,
+	button#breadcrumbs-widget-item-7,
+	button#breadcrumbs-widget-item-7 > span,
+	button#breadcrumbs-widget-item-8,
+	button#breadcrumbs-widget-item-8 > span,
+	button#breadcrumbs-widget-item-9,
+	button#breadcrumbs-widget-item-9 > span,
+	button#breadcrumbs-widget-item-10,
+	button#breadcrumbs-widget-item-10 > span,
+	button#breadcrumbs-widget-item-11,
+	button#breadcrumbs-widget-item-11 > span,
+	button#breadcrumbs-widget-item-12,
+	button#breadcrumbs-widget-item-12 > span,
+	button#breadcrumbs-widget-item-13,
+	button#breadcrumbs-widget-item-13 > span,
+	button#breadcrumbs-widget-item-14,
+	button#breadcrumbs-widget-item-14 > span,
+	button#breadcrumbs-widget-item-15,
+	button#breadcrumbs-widget-item-15 > span,
+	button#breadcrumbs-widget-item-16,
+	button#breadcrumbs-widget-item-16 > span,
+	button#breadcrumbs-widget-item-17,
+	button#breadcrumbs-widget-item-17 > span,
+	button#breadcrumbs-widget-item-18,
+	button#breadcrumbs-widget-item-18 > span,
+	button#breadcrumbs-widget-item-19,
+	button#breadcrumbs-widget-item-19 > span,
+	button#breadcrumbs-widget-item-20,
+	button#breadcrumbs-widget-item-20 > span,
+	button#breadcrumbs-widget-item-21,
+	button#breadcrumbs-widget-item-21 > span,
+	button#breadcrumbs-widget-item-22,
+	button#breadcrumbs-widget-item-22 > span,
+	.breadcrumbs-widget-item,
+	.breadcrumbs-widget-item-id.plain,
+	span.breadcrumbs-widget-item-classes.plain,
+	.toolbarbutton-icon,
+	button#toolbox-tab-inspector,
+	command-button-pick,
+	/**/
+	h3.stylesheet-title,
+	span.breadcrumbs-widget-item-classes.plain,
+	span.breadcrumbs-widget-item-tag.plain,
+	/*Réglages*/
+	#tools-box.options-vertical-pane > fieldset#default-tools-box.options-groupbox,
+	#options-panel > div,
+	.options-citation-label,
+	/*cases de recherches*/
+	#ruleview-searchbox.devtools-filterinput,
+	div.devtools-searchbox > input.devtools-filterinput,
+	input,
+	.devtools-searchbox-no-match > .devtools-searchinput-clear
+	{
+	  color: orange !important;
+	  fill: orange !important;
+	}
+	.ruleview-header
+	{
+	  border-bottom: 1px solid rgb(48, 48, 48) !important;
+	}
+	.devtools-tab.selected .devtools-tab-line, .tabs-menu-item.is-active .devtools-tab-line
+	{
+	  background: orange !important;
+	}
+	.devtools-filterinput:focus,
+	.devtools-searchinput:focus,
+	.devtools-searchbox-no-match,
+	.devtools-searchbox:focus-within
+	{
+	  border-color: orange !important;
+	}
+	.breadcrumbs-widget-item:not(:first-child)::before
+    {
+      content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAUAAAAHCAMAAAD3eXfcAAADAFBMVEX/mwD/t0rO7dwAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVunRVunQABYgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVu1xVu1wABKBVu2QABJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVu6RVu6QABFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVvBRVvBQAA+gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVvLBVvLAAA0wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBsvsqAAAAA3RSTlP//wDXyg1BAAAACXBIWXMAAAsSAAALEgHS3X78AAAAIUlEQVR42mNgYGRiYmJgZGAAkkwMQIqBCchhgLIh4mA1AAL8ACQPcVYhAAAAAElFTkSuQmCC") !important;
+    }
+	#sourceeditor-options.options-groupbox > label > select,
+	#inspector-options.options-groupbox > label > select#defaultColorUnitMenuList
+	{
+      -moz-appearance: none !important;
+      background: transparent !important;
+      color: orange !important;
+      border: none !important;
+      outline: none !important;
+	}
+}
+
+
+
+
+
+userContent.css
+Affichage de userContent.css
+
+AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVu1xVu1wABKBVu2QABJgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVu6RVu6QABFgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVvBRVvBQAA + gAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABVvLBVvLAAA0wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABBsvsqAAAAA3RSTlP // wDXyg1BAAAACXBIWXMAAAsSAAAL

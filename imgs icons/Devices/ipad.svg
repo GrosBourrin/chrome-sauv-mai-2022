@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="24px" viewBox="0 0 18 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>ipad</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-118.000000, -100.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M120,100 L134,100 C135.104569,100 136,100.895431 136,102 L136,122 C136,123.104569 135.104569,124 134,124 L120,124 C118.895431,124 118,123.104569 118,122 L118,102 C118,100.895431 118.895431,100 120,100 Z M120,101 C119.447715,101 119,101.447715 119,102 L119,122 C119,122.552285 119.447715,123 120,123 L134,123 C134.552285,123 135,122.552285 135,122 L135,102 C135,101.447715 134.552285,101 134,101 L120,101 Z M119,103 L119,102 L135,102 L135,103 L119,103 Z M119,122 L119,121 L135,121 L135,122 L119,122 Z" id="ipad"></path>
+        </g>
+    </g>
+</svg>

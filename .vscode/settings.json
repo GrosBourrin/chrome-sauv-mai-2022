@@ -1,0 +1,73 @@
+{
+	"workbench.editor.showTabs": true,
+	"editor.largeFileOptimizations": true,
+	"editor.fontSize": 15,
+	"editor.fontFamily": "FiraCode NF, Fira Code Nerd, Hack, Fira Code, Envy Code R, Cascadia,JetBrains Mono, Operator Mono Light, Noto Mono, Rubik, Inconsolata, Consolas, 'Courier New', monospace, MonoLisa",
+	"dateTime.customFormat": "DD-MM-YYYY HH:mm:ss",
+	"dateTime.padHours": true,
+	"dateTime.padMinutes": true,
+	"dateTime.padSeconds": true,
+	"editor.colorDecorators": true,
+	"workbench.colorTheme": "Horizon",
+	"workbench.iconTheme": "helium-icon-theme",
+	"workbench.statusBar.visible": true,
+	"workbench.settings.editor": "json",
+	"workbench.activityBar.visible": true,
+	"editor.fontLigatures": false,
+	"editor.formatOnPaste": true,
+	"workbench.editor.highlightModifiedTabs": true,
+	"files.insertFinalNewline": true,
+	"explorer.sortOrder": "type",
+	"editor.tabSize": 10,
+	"bookmarks.saveBookmarksInProject": true,
+	"workbench.tree.renderIndentGuides": "always",
+	"workbench.list.horizontalScrolling": true,
+	"workbench.tree.indent": 16,
+	"terminal.integrated.fontFamily": "Cascadia Code, SauceCodePro Nerd Font Mono,Source Code Pro",
+	"terminal.integrated.fontSize": 15,
+	"terminal.integrated.cursorStyle": "underline",
+	"terminal.integrated.cursorBlinking": true,
+	"bracket-pair-colorizer-2.forceIterationColorCycle": true,
+	"editor.tokenColorCustomizations": {
+		"textMateRules": [
+			{
+				"name": "No italics",
+				"scope": [
+					"",
+					"keyword",
+					"comment",
+					"markup.quote",
+					"variable.language",
+					"variable.parameter"
+				],
+				"settings": {
+					"fontStyle": ""
+				}
+			}
+		]
+	},
+	"gutterpreview.showUnderline": false,
+	"css.completion.completePropertyWithSemicolon": true,
+	"editor.matchBrackets": "always",
+	"editor.minimap.scale": 3,
+	"editor.cursorSmoothCaretAnimation": true,
+	"editor.maxTokenizationLineLength": 52000,
+	"colorize.colorized_colors": [
+		"BROWSERS_COLORS",
+		"HEXA",
+		"RGB",
+		"HSL"
+	],
+	"editor.lineHeight": 23,
+	"workbench.list.smoothScrolling": true,
+	"editor.renderLineHighlight": "none",
+	"editor.scrollbar.horizontalScrollbarSize": 10,
+	"editor.scrollbar.verticalScrollbarSize": 10,
+	"workbench.colorCustomizations": {},
+	"editor.renderWhitespace": "all",
+	"editor.wordWrap": "on",
+	"editor.bracketPairColorization.enabled": true,
+	"editor.guides.bracketPairs": "active",
+	"javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+	"editor.autoClosingBrackets": "always",
+}

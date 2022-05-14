@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>checkbox</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-372.000000, -152.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M373,154.994202 L373,169.005798 C373,170.1055 373.893931,171 374.994202,171 L389.005798,171 C390.1055,171 391,170.106069 391,169.005798 L391,154.994202 C391,153.8945 390.106069,153 389.005798,153 L374.994202,153 C373.8945,153 373,153.893931 373,154.994202 Z M372,154.994202 C372,153.34055 373.343312,152 374.994202,152 L389.005798,152 C390.65945,152 392,153.343312 392,154.994202 L392,169.005798 C392,170.65945 390.656688,172 389.005798,172 L374.994202,172 C373.34055,172 372,170.656688 372,169.005798 L372,154.994202 Z" id="checkbox"></path>
+        </g>
+    </g>
+</svg>

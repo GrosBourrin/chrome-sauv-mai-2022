@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="22px" height="14px" viewBox="0 0 22 14" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>google-plus</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-320.000000, -106.000000)" fill="#FFFFFF">
+            <path d="M327,112 L333.61,112 C333.67,112.35 333.72,112.7 333.72,113.16 C333.72,117.16 331.04,120 327,120 C323.13,120 320,116.87 320,113 C320,109.13 323.13,106 327,106 C328.89,106 330.47,106.69 331.69,107.83 L329.79,109.66 C329.27,109.16 328.36,108.58 327,108.58 C324.61,108.58 322.66,110.56 322.66,113 C322.66,115.44 324.61,117.42 327,117.42 C329.77,117.42 330.81,115.43 330.97,114.4 L327,114.4 L327,112 Z M342,112 L342,114 L340,114 L340,116 L338,116 L338,114 L336,114 L336,112 L338,112 L338,110 L340,110 L340,112 L342,112 Z" id="google-plus"></path>
+        </g>
+    </g>
+</svg>

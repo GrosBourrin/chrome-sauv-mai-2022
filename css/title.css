@@ -1,0 +1,38 @@
+
+/* Shows window title in menubar */
+/* Enable menubar for correct behavior */
+@-moz-document url(chrome://browser/content/browser.xhtml) {
+	:root:not([sizemode="fullscreen"])>head {
+		display: block !important;
+		position: fixed !important;
+		right: 140px !important;
+		/* Space for window controls */
+		width: calc(100vw - 830px) !important;
+		/* Window width - window control width - menuitem (English) width */
+		text-align: left !important;
+	}
+
+	head>* {
+		display: none !important;
+	}
+
+	head>title {
+		display: -moz-box !important;
+		padding-top: 7px !important;
+		margin-top: 6px !important;
+		max-width: 50vw !important;
+		overflow-x: -moz-hidden-unscrollable !important;
+		text-overflow: ellipsis !important;
+		-moz-box-pack: right !important;
+		font-family: Fira Sans !important;
+		font-size: 14px !important;
+		font-weight: bold !important;
+		color: #1e90ff !important;
+	}
+
+	@media (-moz-os-version:windows-win10) {
+		:root[sizemode="maximized"]>head>title {
+			padding-top: 9px !important;
+		}
+	}
+}

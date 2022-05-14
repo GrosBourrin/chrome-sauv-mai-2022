@@ -1,0 +1,183 @@
+
+@-moz-document url-prefix("chrome://mozapps/content/extensions/aboutaddons.html") {
+
+	:root {
+		--in-content-border-hover: dodgerblue !important;
+		--card-outline-color: dodgerblue !important;
+		font-family: Fira Sans !important;
+	}
+
+	.addon.card {
+		font-family: Fira Sans !important;
+		border-radius: 0px !important;
+	}
+
+	:root {
+		overflow-x: hidden !important;
+	}
+
+	/* Remove this if it causes horizontal scrolling problems */
+
+	@media (min-width:720px) {
+		#main {
+			max-width: unset !important;
+			padding-right: 28px !important;
+		}
+	}
+
+	addon-list>section,
+	recommended-addon-list {
+		padding: 1em !important;
+		display: grid !important;
+		grid-template-areas: "hd hd""cd cd" !important;
+		grid-template-columns: 1fr 1fr !important;
+		column-gap: 1em !important;
+
+	}
+
+	addon-card .card-contents {
+		width: unset !important;
+		white-space: initial !important;
+	}
+
+	.card-heading-image {
+		max-width: calc(100% + 32px) !important;
+	}
+
+	section>h2 {
+		grid-area: hd !important;
+	}
+
+	addon-card {
+		padding-bottom: 0px !important;
+		padding-top: 0px !important;
+		grid-area: auto !important;
+	}
+
+	addon-card .addon-description {
+		max-height: 3em !important;
+		scrollbar-width: thin !important;
+	}
+
+}
+
+
+
+@-moz-document url("chrome://mozapps/content/extensions/aboutaddons.html") {
+
+	addon-list[type="extension"] section[section="0"]>addon-card {
+		counter-increment: enabled !important;
+	}
+
+	addon-list[type="extension"] section[section="1"]>addon-card {
+		counter-increment: disabled !important;
+	}
+
+	section[section="0"] {
+		counter-reset: enabledpvt !important;
+	
+	}
+
+	addon-list[type="extension"] section[section="0"]>addon-card .addon-badge-private-browsing-allowed {
+		counter-increment: enabledpvt !important;
+	}
+
+	addon-list[type="extension"] section[section="0"],
+	addon-list[type="extension"] section[section="1"] {
+		position: relative !important;
+	}
+
+	addon-list[type="extension"] section[section="0"]>.list-section-heading,
+	addon-list[type="extension"] section[section="1"]>.list-section-heading {
+		visibility: collapse !important;
+	}
+
+	addon-list[type="extension"] section[section="0"]::after,
+	addon-list[type="extension"] section[section="1"]::after {
+		content: "Enabled: "counter(enabled) ". Allowed in Private Windows: "counter(enabledpvt) "." !important;
+		position: absolute !important;
+		top: 0px !important;
+		font-size: 17px !important;
+		font-family: Fira Sans !important;
+		font-weight: 600 !important;
+	}
+
+	addon-list[type="extension"] section[section="1"]::after {
+		content: "Disabled: "counter(disabled) "." !important;
+		font-family: Fira Sans !important;
+	}
+
+	panel-list {
+		border: none !important;
+		box-shadow: none !important;
+		display: inline !important;
+		min-width: unset !important;
+		padding: 0 !important;
+		right: 0px !important;
+	}
+
+	panel-item {
+		display: inline-block !important;
+		margin-inline-start: 2px !important;
+	}
+
+	.more-options-menu {
+		margin: unset !important;
+	}
+
+	/* link + is needed to avoid styling check for updates buttons and tabs on add-on detail pages because shadowdom */
+	link+button {
+		background-color: var(--in-content-button-background) !important;
+		background-position: center !important;
+		border-radius: 0px !important;
+		cursor: pointer !important;
+		height: 32px !important;
+		padding-left: 8px !important;
+		padding-right: 8px !important;
+	}
+
+	link+button:hover {
+		background-color: var(--in-content-button-background-hover) !important;
+	}
+
+	link+button:hover:active {
+		background-color: var(--in-content-button-background-active) !important;
+	}
+
+	link+button:focus {
+		box-shadow: 0 0 0 1px var(--in-content-border-active) inset, 0 0 0 1px var(--in-content-border-active), 0 0 0 4px var(--in-content-border-active-shadow) !important;
+	}
+
+	/* dot badging on update button */
+	link+button::after {
+		left: 22px !important;
+		top: 4px !important;
+	}
+
+	/* use icons, remove text */
+	panel-item[action="remove"],
+	panel-item[action="install-update"],
+	panel-item[action="always-activate"] {
+		font-size: 0px !important;
+		position: relative !important;
+		top: -6px !important;
+		fill: var(--in-content-page-color) !important;
+		width: 32px !important;
+	}
+
+	.more-options-button.ghost-button,
+	.arrow.top,
+	.arrow.bottom,
+	panel-item-separator,
+	panel-item[action="report"],
+	panel-item[action="expand"],
+	panel-item[hidden],
+	.addon-description {
+		display: none !important;
+	}
+
+	.card-contents {
+		align-self: center !important;
+	}
+
+}

@@ -1,0 +1,11 @@
+user_pref("toolkit.scrollbox.horizontalScrollDistance", 4);
+user_pref("toolkit.scrollbox.verticalScrollDistance", 4);
+user_pref("general.smoothScroll.mouseWheel.durationMinMS", 200);
+user_pref("apz.frame_delay.enabled", false);
+user_pref("general.smoothScroll.msdPhysics.continuousMotionMaxDeltaMS", 10);
+user_pref("general.smoothScroll.msdPhysics.motionBeginSpringConstant", 200);
+user_pref("general.smoothScroll.msdPhysics.regularSpringConstant", 500);
+user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaMS", 35);
+user_pref("general.smoothScroll.msdPhysics.slowdownMinDeltaRatio", 0.3);
+user_pref("general.smoothScroll.msdPhysics.slowdownSpringConstant", 150);
+user_pref("mousewheel.autodir.enabled", true);

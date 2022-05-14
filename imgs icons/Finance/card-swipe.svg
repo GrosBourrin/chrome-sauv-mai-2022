@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="16px" viewBox="0 0 24 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 46.2 (44496) - http://www.bohemiancoding.com/sketch -->
+    <title>card-swipe</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="icons" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Artboard" transform="translate(-166.000000, -104.000000)" fill-rule="nonzero" fill="#FFFFFF">
+            <path d="M189,107 L189,105.99406 C189,105.447283 188.550546,105 187.995053,105 L168.004947,105 C167.448357,105 167,105.446018 167,105.99406 L167,107 L189,107 Z M189,111 L167,111 L167,118.00594 C167,118.552717 167.449454,119 168.004947,119 L187.995053,119 C188.551643,119 189,118.553982 189,118.00594 L189,111 Z M166,105.99406 C166,104.892771 166.897026,104 168.004947,104 L187.995053,104 C189.102355,104 190,104.894514 190,105.99406 L190,118.00594 C190,119.107229 189.102974,120 187.995053,120 L168.004947,120 C166.897645,120 166,119.105486 166,118.00594 L166,105.99406 Z M167,110 L189,110 L189,108 L167,108 L167,110 Z" id="card-swipe"></path>
+        </g>
+    </g>
+</svg>
